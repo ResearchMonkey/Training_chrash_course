@@ -51,12 +51,67 @@ fav_lang = {
 #     print("\nKey: "+k)
 #     print("Value: "+v)
 
-
 # for name,language in fav_lang.items():
 #     print(name.title()+ "'s favorite language is "+language.title()+'. \n')
+#
+# for name in fav_lang.keys():
+#     print(name.title())
+# for name in fav_lang:
+#     print(name.title())
 
-for name in fav_lang.keys():
-    print(name.title())
+# friends = ['sarah','phil']
+# for name in fav_lang.keys():
+#     # print(name.title())
+#
+#     if name in friends:
+#         print("Hi "+name.title()+ ", I see your favorite language is "+fav_lang[name].title()+"!")
+#
+# if "erin" not in fav_lang:
+#     print("Erin, Please take our poll.")
+#
+# for name in sorted(fav_lang.keys()):
+#     print(name.title()+" Thank you for taking our poll!")
+#
+# # looping through dictionaries
+# print("The following langauge have been mentiond:")
+# for lang in fav_lang.values():
+#     print(lang.title())
 
-for name in fav_lang:
-    print(name.title())
+for lang in set(fav_lang.values()):
+    print(lang.title())
+
+alien_0 = {"color": "Green", "Point":5}
+alien_1 = {"color": "yellow", "Point":10}
+alien_2 = {"color": "red", "Point":15}
+
+aliens = []
+
+for alien in aliens:
+    print(alien)
+
+# makes 30 green aliens
+for alien_number in range(30):
+    new_alien = {'color':'green', 'points':5, 'speed':'slow'}
+    aliens.append(new_alien)
+
+# show the first 5 aliens
+for alien in aliens[:2]:
+    print(alien)
+print(...)
+
+# show how many aliens have been created
+print("Total number of aliens:" + str(len(aliens)))
+
+for alien in aliens[:3]:
+    if alien['color'] == "green":
+        alien['color'] = "yellow"
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+for aliens in aliens:
+    if alien['color'] == 'yellow':
+        print('yes')
+
+
+#  -------------------------------
+# stopped at page 110 in PDF
