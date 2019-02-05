@@ -77,41 +77,53 @@ fav_lang = {
 # for lang in fav_lang.values():
 #     print(lang.title())
 
-for lang in set(fav_lang.values()):
-    print(lang.title())
-
-alien_0 = {"color": "Green", "Point":5}
-alien_1 = {"color": "yellow", "Point":10}
-alien_2 = {"color": "red", "Point":15}
-
-aliens = []
-
-for alien in aliens:
-    print(alien)
-
-# makes 30 green aliens
-for alien_number in range(30):
-    new_alien = {'color':'green', 'points':5, 'speed':'slow'}
-    aliens.append(new_alien)
-
-# show the first 5 aliens
-for alien in aliens[:2]:
-    print(alien)
-print(...)
-
-# show how many aliens have been created
-print("Total number of aliens:" + str(len(aliens)))
-
-for alien in aliens[:3]:
-    if alien['color'] == "green":
-        alien['color'] = "yellow"
-        alien['speed'] = 'medium'
-        alien['points'] = 10
-
-for aliens in aliens:
-    if alien['color'] == 'yellow':
-        print('yes')
-
+# for lang in set(fav_lang.values()):
+#     print(lang.title())
+#
+# alien_0 = {"color": "Green", "Point":5}
+# alien_1 = {"color": "yellow", "Point":10}
+# alien_2 = {"color": "red", "Point":15}
+#
+# aliens = []
+#
+# for alien in aliens:
+#     print(alien)
+#
+# # makes 30 green aliens
+# for alien_number in range(30):
+#     new_alien = {'color':'green', 'points':5, 'speed':'slow'}
+#     aliens.append(new_alien)
+#
+# # show the first 5 aliens
+# for alien in aliens[:2]:
+#     print(alien)
+# print(...)
+#
+# # show how many aliens have been created
+# print("Total number of aliens:" + str(len(aliens)))
+#
+# for alien in aliens[:3]:
+#     if alien['color'] == "green":
+#         alien['color'] = "yellow"
+#         alien['speed'] = 'medium'
+#         alien['points'] = 10
+#
+# for aliens in aliens:
+#     if alien['color'] == 'yellow':
+#         print('yes')
 
 #  -------------------------------
 # stopped at page 110 in PDF
+
+# A List in a Dictionary
+# pizza = {'crust':"thick", "toppings":['mushrooms', 'extra cheese']}
+# print("Your ordered a "+ pizza['crust']+"-crust pizza with the following toppings")
+# for toppings in pizza["toppings"]:
+#     print("\t"+toppings)
+
+fav_lang = {"Sarah":['python','ruby','c'],"jen":["c"],'ed':['python','c''ruby'],'phil':['haskell','go']}
+
+for name, lang in fav_lang.items():
+    print("\n"+name.title()+"'s fav lang are")
+    for langs in lang:
+        print('\t'+langs.title())
