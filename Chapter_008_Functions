@@ -1,0 +1,49 @@
+def greet_user(user_name):
+    """Display simple greetting"""
+    print("Hello, " + user_name.title() + '!')
+
+# greet_user('Jess')
+# greet_user('Gray')
+
+def fav_book(book_name):
+    '''Enters the argument into the function and submits the title '''
+    print('My favorite book is {}'.format(book_name.title()))
+
+# fav_book("alice in wonderland")
+
+def describe_pet(animal_type, pet_name):
+    """Enetr the ani type and pet name to print info"""
+    print('\nI have a {}!'.format(animal_type))
+    print("My {}'s name is {}".format(animal_type.title(), pet_name.title()))
+
+# describe_pet("rat", 'splinter')
+# describe_pet(pet_name='Leo', animal_type='Turtle')
+
+def describe_pet_two(pet_name, animal_type='dog'):
+    """Enetr the ani type and pet name to print info"""
+    print('\nI have a {}!'.format(animal_type))
+    print("My {}'s name is {}".format(animal_type.title(), pet_name.title()))
+
+# describe_pet_two('Higgins')
+
+def get_formatted_name(first_name, last_name, middle_name=''):
+    """Retrun a full name that is well formatted"""
+    full_name = first_name + ' ' + middle_name + '' + last_name
+    return full_name.title()
+
+# musician = get_formatted_name('jimi', 'Hindrix')
+# print(musician)
+# musician = get_formatted_name('john', 'hooker')
+# print(musician)
+
+def build_person(first_name, last_name, age=''):
+    """Return a dictionary of information about a person."""
+    person = {'first': first_name, 'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_person('jimi', 'Hindrix', age=22)
+print(musician)
+
+# page 141
