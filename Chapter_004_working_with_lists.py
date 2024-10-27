@@ -1,74 +1,58 @@
-# data=['manufacturer_name','unii','product_type','spl_set_id','route','generic_name','upc','brand_name','product_ndc',]
-# print(data)
-# for data in data:
-#     print(data.title(),"is an item in a list")
-# stopped at Making a numerical list
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician.title() + ', That was a great trick!')
+    print('I cant wait to see your next trick ' + magician.title() + '.\n')
 
-# for value in range(1,5):
-#     print(value)
-#
-# number = list(range(1,8))
-# print(number)
-#
-# even_number = list(range(3,30,3))
-# print(even_number)
-#
-# squares =[]
-# for value in range(1,11):
-#     square = value**2
-#     squares.append(square)
-# print(squares)
-#
-# digits= [1,2,3,4,5,6,7,8,9,0]
-# print(min(digits))
-# print(max(digits))
-# print(sum(digits))
+for value in range(1, 6):
+    print(value)
 
-# for value in range(1,21):
-#   print(value)
+numbers = list(range(1, 6))
+print(numbers)
 
-# number = []
-# for values in range(0,100,5):
-#     number = values
-#     print(number)
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
 
+squares = []
+for value in range(1, 11):
+    square = value**2
+    squares.append(square)
 
-# my_food = ['pizza','falafel',"carrot"]
-# friends_food = my_food[:]
-# my_food.append("hotdog")
-# friends_food.append("steak")
+print(squares)
 
-# print("My foods are:")
-# print(my_food)
-# print("\n My friends eat:")
-# print(friends_food)
-# print(my_food[1:3])
+digits = [1 ,2 , 3, 4, 5, 6, 7, 8, 9, 0]
+print(min(digits))
+print(max(digits))
+print(sum(digits))
 
-# for eats in my_food:
-#     my_food = eats
-#     print("I Like "+eats)
+squares = [value**2 for value in range(1, 11)]
+print(squares)
 
-# squares =[]
-# for value in range(1,11):
-#     square = value**2
-#     squares.append(square)
-# print(squares)
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3])
+print(players[1:4])
 
+print("Here are the first three players on my team:")
+for player in players[:3]:
+    print(player.title())
 
-# dimensions = (200,50)
-# print(dimensions[0])
-# print(dimensions[1])
-#
-# for demension in dimensions:
-#     print(demension)
-#
-# dimensions = (400,100)
-# print("\nModified dimensions:")
-# for dimension in dimensions:
-#     print(dimension)
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
 
-menu =("rice","noodles","egg Roll","soup", "cake")
-for item in menu:
-    print(item)
+print("My favorite foods are:")
+print(my_foods)
 
-menu =("rice","noodles","egg Roll","soup", "water")
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+my_foods.append('cannoli')
+friend_foods.append('Ice Cream')
+
+print("My favorite foods are:")
+print(my_foods)
+
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+dimensions = (200, 50)
+for dimension in dimensions:
+    print(dimension)

@@ -1,56 +1,75 @@
-# name = "ada lovelace"
-# first_name = "ada"
-# last_name = "lovelace"
-# full_name = first_name + " " + last_name
+import this
 
-# print(name)
-# print(name.title())
-# print(name.upper())
-# print(name.lower())
-# print(full_name.title())
-# print("Hello,", full_name.title(),"!")
-# print("Hello, " + full_name.title() + "!")
-# message = "Hello, " + full_name.title() + "!"
-# print(message)
-# Adding white space
-# \t adds
-#print("\tPython")
-# \n adds new line
-#print("\nSpace")
-# adding \n inline adds each entry on a new line
-# print("Lost\nin\nSpace")
-# you can combine for a tab delineated list
-# print("list\n\ttitle method\n\tupper and lower method\n\tconcatination using +")
-fav_lang = 'python '
-# print(fav_lang)
-# print(fav_lang.rstrip())
-# fav_lang=fav_lang.rstrip()
-# print(fav_lang)
-# name="Kristen"
-# print("Hello", name+ ", would you like to play a game?")
-#
-# print(name.upper())
-# print(name.lower())
-# print(name.title())
-#
-# name_famous = "Edward Denning"
-# print(name_famous,"once said",('"In God we trust, all other must bring data."'))
-#
-# e_denning_quote= (name_famous +" once said "+('"In God we trust, all other must bring data."'))
-# print(e_denning_quote)
-#
-# name_w_white_spaces=(" Kristen_Lohrer ")
-# print(name_w_white_spaces)
-# print("\n"+name_w_white_spaces)
-# print("\n"+name_w_white_spaces.strip())
-# print(2+5)
-# print(2/5)
-# print(2*5)
-# print(2-5)
-# print((2+5)/2+(3+1))
-# print(3*0.1)
-# import this
-# age = 23
-# message = "Happy "+ str(age) +"rd Birthday!"
-# print(message)
-# print(this)
+
+persons_name = "john candy"
+
+print('Hello {}, would you like to learn some Python today?'.format(persons_name.title()))
+
+name = 'ada lovelace'
+case = 'Example of case'
+first_name = 'ada'
+last_name = 'lovelace'
+full_name = first_name + ' '+last_name
+print(name.title())
+print(name.lower())
+print(name.upper())
+print(full_name.title())
+print('Hello, '+full_name.title()+'!')
+
+message = 'Hello, ' + full_name.title()+'!'
+print(message)
+
+print('Hello, '+full_name.title()+'\tI want to thank you')
+
+print('Languages:\nPython\nC\nJava')
+print('Languages:\n\tPython\n\tC\n\tJava')
+
+favorite_language = 'Python '
+print(favorite_language)
+print(favorite_language.rstrip())
+print(favorite_language.lstrip())
+
+# how python handles Integers
+print(2 + 3)
+print(3-2)
+print(2*3)
+print(3/2)
+print(3**2)
+print(10**6)
+
+# How python handles floats
+print(2.1 + 3.2)
+print(3.3-2.4)
+print(2.5*3.6)
+print(3.7/2.8)
+print(3.9**2.10)
+print(10.11**6.12)
+
+age = 23
+message = "Happy " + str(age) + 'rd Birthday!'
+print(message)
+
+
+quote = "I'll give you my gun when you pry it from my cold, dead hands"
+speaker = 'Charlton Heston'
+
+print(f'{speaker} once said "{quote}"'.format())
+
+name_for_2_7 = "  jonny\n\tsilverhand  "
+print(name_for_2_7)
+
+print(name_for_2_7.lstrip())
+print(name_for_2_7.rstrip())
+print(name_for_2_7.strip().title())
+
+# addition
+print(5+3)
+# subtraction
+print(9-1)
+# multiplication
+print(2*4)
+# division
+print(16/2)
+
+favorate_number = 7
+print('My favorite number is {}!'.format(favorate_number))
